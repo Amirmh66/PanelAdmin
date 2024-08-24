@@ -1,0 +1,214 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body id="body" class="bg-slate-600">
+
+
+
+    <!-- ========== Start NavBar ========== -->
+    <nav>
+
+        <div class="nav" x-data="{menu: false}">
+
+            <a class="text-3xl font-bold " href="">Logo</a>
+
+            <!-- btnMenu -->
+            <button class="sm:hidden" x-on:click="menu = !menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="size-10 text-white">
+                    <path fill-rule="evenodd"
+                        d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+
+            <!-- ul -->
+            <ul class="ul transition-all ease duration-200" x-cloak
+                x-bind:class="menu ? 'max-h-96 pt-2' : 'max-h-0 sm:max-h-96' ">
+                <li>Home1</li>
+                <li>Home2</li>
+                <li>Home3</li>
+                <li>Home4</li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- ========== End NavBar ========== -->
+
+
+
+    <!-- ========== Start hero ========== -->
+    <section class="bg-fixed w-full" style="background-image: url(./Images/GMC-Sierra_HD_AT4X-2024-800-01.jpg);">
+
+        <div class="relative z-10 container mx-auto h-full flex items-center justify-center">
+
+            <p class="text-white text-2xl font-bold">GMC 2018</p>
+
+        </div>
+
+    </section>
+    <!-- ========== End  hero ========== -->
+
+
+
+    <!-- ========== Start boxes ========== -->
+    <section class="py-14 bg-gray-200">
+
+        <div class="container mx-auto font-semibold">
+
+            <div class="flex justify-center pb-10 text-2xl  md:text-5xl">
+                <p>Cars <span class="bg-violet-600 p-3 rounded drop-shadow-md">GMC 2018</span></p>
+            </div>
+
+            <!-- Cards -->
+            <div class="mx-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+
+
+                <!-- Card -->
+
+                <div class="card">
+                    <div class="overflow-hidden  rounded-xl bg-white">
+                        <img src="./Images/GMC-Sierra_HD_AT4X-2024-800-01.jpg" alt="" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+
+                        <p class="text-lg font-bold mb-2">GMC 2018</p>
+                        <p class="text-gray-700 mb-4 line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Autem
+                            quasi facere natus. Autem voluptatibus, odit reprehenderit esse recusandae laudantium quis
+                            modi magni, hic doloribus incidunt! Velit libero corrupti odit itaque!</p>
+
+                        <button class="btn-blue">Read
+                            More</button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="overflow-hidden  rounded-xl bg-white">
+                        <img src="./Images/GMC-Sierra_HD_AT4X-2024-800-01.jpg" alt="" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+
+                        <p class="text-lg font-bold mb-2">GMC 2018</p>
+                        <p class="text-gray-700 mb-4 line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Autem
+                            quasi facere natus. Autem voluptatibus, odit reprehenderit esse recusandae laudantium quis
+                            modi magni, hic doloribus incidunt! Velit libero corrupti odit itaque!</p>
+
+                        <button class="btn-blue">Read
+                            More</button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="overflow-hidden  rounded-xl bg-white">
+                        <img src="./Images/GMC-Sierra_HD_AT4X-2024-800-01.jpg" alt="" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+
+                        <p class="text-lg font-bold mb-2">GMC 2018</p>
+                        <p class="text-gray-700 mb-4 line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Autem
+                            quasi facere natus. Autem voluptatibus, odit reprehenderit esse recusandae laudantium quis
+                            modi magni, hic doloribus incidunt! Velit libero corrupti odit itaque!</p>
+
+                        <button class="btn-blue">Read
+                            More</button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="overflow-hidden  rounded-xl bg-white">
+                        <img src="./Images/GMC-Sierra_HD_AT4X-2024-800-01.jpg" alt="" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+
+                        <p class="text-lg font-bold mb-2">GMC 2018</p>
+                        <p class="text-gray-700 mb-4 line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Autem
+                            quasi facere natus. Autem voluptatibus, odit reprehenderit esse recusandae laudantium quis
+                            modi magni, hic doloribus incidunt! Velit libero corrupti odit itaque!</p>
+
+                        <button class="btn-blue">Read
+                            More</button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="overflow-hidden  rounded-xl bg-white">
+                        <img src="./Images/GMC-Sierra_HD_AT4X-2024-800-01.jpg" alt="" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+
+                        <p class="text-lg font-bold mb-2">GMC 2018</p>
+                        <p class="text-gray-700 mb-4 line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Autem
+                            quasi facere natus. Autem voluptatibus, odit reprehenderit esse recusandae laudantium quis
+                            modi magni, hic doloribus incidunt! Velit libero corrupti odit itaque!</p>
+
+                        <button class="btn-blue">Read
+                            More</button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="overflow-hidden  rounded-xl bg-white">
+                        <img src="./Images/GMC-Sierra_HD_AT4X-2024-800-01.jpg" alt="" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4 text-center">
+
+                        <p class="text-lg font-bold mb-2">GMC 2018</p>
+                        <p class="text-gray-700 mb-4 line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Autem
+                            quasi facere natus. Autem voluptatibus, odit reprehenderit esse recusandae laudantium quis
+                            modi magni, hic doloribus incidunt! Velit libero corrupti odit itaque!</p>
+
+                        <button class="btn-blue">Read
+                            More</button>
+
+                    </div>
+                </div>
+
+                <!-- EndCard -->
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ========== End boxes ========== -->
+
+
+
+    <!-- ========== Start Blog ========== -->
+    <section>
+        <div>
+
+        </div>
+    </section>
+    <!-- ========== End Blog ========== -->
+
+
+
+
+    <!-- ========== Start footer ========== -->
+    <footer class="flex flex-col items-center bg-gray-300">
+        <div class="p-5 text-lg font-bold">
+            <p> :) طراحی و توسعه <a href="" class="text-orange-500 underline">امیر </a></p>
+        </div>
+    </footer>
+    <!-- ========== End footer ========== -->
+
+
+    <script src="//unpkg.com/alpinejs" async></script>
+</body>
+
+</html>
