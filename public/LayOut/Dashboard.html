@@ -10,6 +10,7 @@
 <body class="body">
 
     <div class="flex h-full">
+
         <!-- LeftSide
         Sidebar -->
         <div class="md:block" x-data="{ open: true }">
@@ -133,6 +134,7 @@
             </aside>
 
         </div>
+
         <!-- RightSide
          NavBar&Content -->
         <div class="flex-1">
@@ -172,7 +174,7 @@
                         <button type="button">
 
                             <!-- dark -->
-                            <div @click="darkMode = true"  x-bind:class="darkMode ? 'hidden' : 'block' ">
+                            <div @click="darkMode = true" x-bind:class="darkMode ? 'hidden' : 'block' ">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -233,8 +235,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="//unpkg.com/alpinejs" async></script>
-    
+    <script src="/public/bundle.js"></script>
 </body>
 
 </html>

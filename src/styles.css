@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.size-small {
+  width: 15px;
+  height: 15px;
+}
+
+.size-mediom {
+  width: 25px;
+  height: 25px;
+}
+
+.size-large {
+  width: 45px;
+  height: 45px;
+}
+
+.size-xlarge {
+  width: 80px;
+  height: 80px;
+}
+
+.body {
+  @apply bg-gray-100 dark:bg-gray-900 transition-colors duration-75 p-0 m-0 h-full
+}
+
+.aside {
+  @apply fixed md:relative inset-y-0 left-0 z-30 md:shadow-none h-full w-full shadow-lg
+   md:rounded-none rounded-r-xl bg-gray-100 dark:bg-gray-800 md:bg-white p-4 transition-all md:translate-x-0 lg:pt-4
+}
+
+.th {
+  @apply py-3 px-5 border-b border-gray-300
+}
+
+.td {
+  @apply py-3 px-5 border-t border-gray-300
+}
+
+.drop-down {
+  @apply inline-flex w-full justify-center rounded-md border border-gray-300
+   bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2
+}
+
+.iconOnBox {
+  @apply my-2 inline-block text-white p-2 rounded-full
+}
+
+.color-txt {
+  @apply text-black dark:text-gray-200
+}
+
+.exportBtn {
+  @apply p-2 text-sm border border-sky-300 text-blue-400 cursor-pointer font-bold text-center rounded-lg flex gap-2 items-center
+}
+
+.card-bg-white {
+  @apply bg-white rounded-md p-3 drop-shadow
+}
+
+.card-bg-gray {
+  @apply bg-gray-200 rounded-md p-3 drop-shadow text-start
+}
+
+.SearchBox {
+  @apply w-48 h-8 md:w-80 md:h-10 text-sm px-8 rounded-2xl bg-gray-100 dark:bg-gray-600 
+  color-txt focus:outline-none focus:ring-2 transition-all dark:focus:ring-violet-300 focus:ring-violet-500
+}
+
+.li {
+  @apply drop-shadow-lg cursor-pointer py-2 px-2 md:px-2 m-0 md:m-2 color-txt
+   hover:bg-violet-700 hover:text-gray-50 rounded-lg flex justify-start items-center transition duration-200
+}
+
+.li-txt {
+  @apply text-sm line-clamp-1
+}
+
+.li-icon {
+  @apply size-mediom flex-none md:size-6
+}
+
+[x-cloak] {
+  display: none !important;
+}
